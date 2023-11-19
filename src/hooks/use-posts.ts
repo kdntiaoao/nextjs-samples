@@ -1,12 +1,6 @@
-import useSWR, { Fetcher } from 'swr'
+import type { Post } from '@/types'
+import useSWR from 'swr'
 import { FetcherResponse } from 'swr/_internal'
-
-type Post = {
-  userId: number
-  id: number
-  title: string
-  body: string
-}
 
 const fetcher = <T>(url: string): FetcherResponse<T> => fetch(url).then((res) => res.json())
 

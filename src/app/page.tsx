@@ -26,6 +26,10 @@ const links: LinkItem[] = [
     href: '/samples/sample-posts-dynamic',
     label: 'Dynamic sample post list',
   },
+  {
+    href: '/samples/sample-posts-static',
+    label: 'Static sample post list',
+  },
 ]
 
 export default function Home() {
